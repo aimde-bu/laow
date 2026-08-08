@@ -11,7 +11,7 @@ const { WebSocket, createWebSocketStream } = require('ws');
 function def(env, val) { if (val) process.env[env] = process.env[env] || val; }
 
 def('uuid', '1bd79bc0-c34c-471a-8b02-abed453e8e05');            // ←【必填】UUID,在线生成 https://www.uuidgenerator.net
-def('DOMAIN', '');          // ←【必填】你的域名,没有就填服务器IP
+def('DOMAIN', 'tami-3qk5uxv1m6.dcdeploy.cloud');          // ←【必填】你的域名,没有就填服务器IP
 
 def('vlpt', '443');            // Vless-reality 端口
 def('vmpt', '443');            // Vmess-ws 端口
