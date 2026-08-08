@@ -10,12 +10,12 @@ const { WebSocket, createWebSocketStream } = require('ws');
 // 工具函数: val 非空才写入环境变量(空/注释掉 = 不启用该协议)
 function def(env, val) { if (val) process.env[env] = process.env[env] || val; }
 
-def('uuid', 'd9b609fe-5b77-4100-9b46-bfc7888bcd9d');            // ←【必填】UUID,在线生成 https://www.uuidgenerator.net
-def('DOMAIN', 'kalila-8d9ux7yrla.dcdeploy.cloud');          // ←【必填】你的域名,没有就填服务器IP
+def('uuid', '1bd79bc0-c34c-471a-8b02-abed453e8e05');            // ←【必填】UUID,在线生成 https://www.uuidgenerator.net
+def('DOMAIN', '');          // ←【必填】你的域名,没有就填服务器IP
 
-def('vlpt', '20518');            // Vless-reality 端口
-def('vmpt', '');            // Vmess-ws 端口
-def('hypt', '');            // Hysteria2 端口
+def('vlpt', '443');            // Vless-reality 端口
+def('vmpt', '443');            // Vmess-ws 端口
+def('hypt', '443');            // Hysteria2 端口
 def('vwpt', '');            // Vless-ws 端口
 def('tupt', '');            // Tuic 端口
 def('anpt', '');            // AnyTLS 端口
