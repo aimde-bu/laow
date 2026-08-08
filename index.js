@@ -90,6 +90,9 @@ fs.chmod("argosbx.sh", 0o777, (err) => {
       if (fs.existsSync(subtxt)) {
         const c = fs.readFileSync(subtxt, 'utf8');
         console.log('[诊断] 订阅文件节点数:', c.replace(/^\s*$/gm, '').split('\n').filter(l => l.trim()).length, '行');
+        console.log('========== 订阅内容(~/agsbx/jhsub.txt) ==========');
+        console.log(c.trim());
+        console.log('==================================================');
       }
       if (!enabledProto.length) console.log('[提醒] 未设置任何协议变量(vlpt/vmpt/hypt等), argosbx.sh不会安装代理, 请检查.env是否上传成功');
       if (!hasUUID) console.log('[提醒] 未设置uuid变量, 订阅路径将是/subuuid且无内置ws节点');
