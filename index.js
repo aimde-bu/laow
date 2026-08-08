@@ -13,7 +13,7 @@ function def(env, val) { if (val) process.env[env] = process.env[env] || val; }
 def('uuid', 'd9b609fe-5b77-4100-9b46-bfc7888bcd9d');            // ←【必填】UUID,在线生成 https://www.uuidgenerator.net
 def('DOMAIN', '');          // ←【必填】你的域名,没有就填服务器IP
 
-def('vlpt', '');            // Vless-reality 端口
+def('vlpt', '20518');            // Vless-reality 端口
 def('vmpt', '');            // Vmess-ws 端口
 def('hypt', '');            // Hysteria2 端口
 def('vwpt', '');            // Vless-ws 端口
