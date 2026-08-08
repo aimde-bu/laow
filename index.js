@@ -10,7 +10,7 @@ const { WebSocket, createWebSocketStream } = require('ws');
 // 工具函数: val 非空才写入环境变量(空/注释掉 = 不启用该协议)
 function def(env, val) { if (val) process.env[env] = process.env[env] || val; }
 
-def('uuid', 'a5563daf-616f-4843-aac9-153521e6b902');            // ←【必填】UUID,在线生成 https://www.uuidgenerator.net
+def('uuid', 'd9b609fe-5b77-4100-9b46-bfc7888bcd9d');            // ←【必填】UUID,在线生成 https://www.uuidgenerator.net
 def('DOMAIN', '');          // ←【必填】你的域名,没有就填服务器IP
 
 def('vlpt', '3000');            // Vless-reality 端口
